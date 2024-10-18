@@ -45,7 +45,7 @@ To set up the project, follow these steps:
 
 
 
-cd rule_engine_project
+cd Rule-Engine-with-AST
 # Install the required packages:
 
 
