@@ -42,7 +42,7 @@ To set up the project, follow these steps:
 # Clone the repository:
 
 
-git clone https://github.com/yourusername/rule_engine_project.git
+
 
 
 cd rule_engine_project
