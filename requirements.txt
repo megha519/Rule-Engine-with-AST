@@ -1,5 +1,7 @@
 Django>=3.2,<4.0
-djangorestframework>=3.12
-# mysqlclient      # uncomment this line if you're using MySQL
-# sqlite3         # included by default with Django, no need to install separately
-pipenv
+djangorestframework>=3.12  # Include if you're using DRF
+mysqlclient                  # Uncomment if you're using MySQL
+# psycopg2-binary            # Uncomment if you're using PostgreSQL
+# django-environ             # Include if you're using it for environment variable management
+# pytest                     # Include if you have tests and use pytest
+pipenv                       # Optional, if you used Pipenv for dependency management
