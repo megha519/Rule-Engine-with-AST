@@ -1,2 +1,5 @@
-Django
+Django>=3.2,<4.0
+djangorestframework>=3.12
+# mysqlclient      # uncomment this line if you're using MySQL
+# sqlite3         # included by default with Django, no need to install separately
 pipenv
