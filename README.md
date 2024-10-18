@@ -31,7 +31,7 @@ Copy code
 API Design
 create_rule(rule_string): Takes a rule string and returns a Node object representing the AST.
 combine_rules(rules): Combines multiple rule strings into a single AST.
-evaluate_rule(data): Evaluates the combined rule's AST against user attributes provided in JSON format.
+evaluate_rule(data): Evaluates the combined rule's AST against user attributes provided in JSON format.```
 Installation
 To set up the project, follow these steps:
 
