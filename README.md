@@ -1,17 +1,18 @@
-Rule Engine with AST
-Overview
-The Rule Engine with AST is a 3-tier application designed to determine user eligibility based on various attributes such as age, department, income, and experience. It employs an Abstract Syntax Tree (AST) to represent conditional rules, allowing for dynamic creation, combination, and evaluation of these rules.
+# Rule Engine with AST
 
-Features
-Dynamic Rule Creation: Create rules using a simple string format.
-AST Representation: Utilizes an AST to manage rules efficiently.
-Rule Evaluation: Evaluate user eligibility based on defined rules and user attributes.
-API Support: Exposes APIs for rule creation and evaluation.
-Data Structure
+## Overview
+The **Rule Engine with AST** is a 3-tier application designed to determine user eligibility based on various attributes such as age, department, income, and experience. It employs an Abstract Syntax Tree (AST) to represent conditional rules, allowing for dynamic creation, combination, and evaluation of these rules.
+
+## Features
+- **Dynamic Rule Creation**: Create rules using a simple string format.
+- **AST Representation**: Utilizes an AST to manage rules efficiently.
+- **Rule Evaluation**: Evaluate user eligibility based on defined rules and user attributes.
+- **API Support**: Exposes APIs for rule creation and evaluation.
+
+## Data Structure
 The application uses the following data structure to represent the AST:
 
-python
-Copy code
+```python
 class Node:
     def __init__(self, type, left=None, right=None, value=None):
         self.type = type  # "operator" or "operand"
@@ -19,8 +20,14 @@ class Node:
         self.right = right  # Reference to right child Node (if operator)
         self.value = value  # Optional value for operand nodes
 Sample Rules
-Rule 1: ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
-Rule 2: ((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)
+Rule 1:
+plaintext
+Copy code
+((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
+Rule 2:
+plaintext
+Copy code
+((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)
 API Design
 create_rule(rule_string): Takes a rule string and returns a Node object representing the AST.
 combine_rules(rules): Combines multiple rule strings into a single AST.
