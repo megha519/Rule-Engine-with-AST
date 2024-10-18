@@ -21,53 +21,55 @@ class Node:
         self.value = value  # Optional value for operand nodes
 Sample Rules
 Rule 1:
-plaintext
-Copy code
+
 ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
 Rule 2:
-plaintext
-Copy code
+
 ((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)
-API Design
+
+
+```
+## API Design
 create_rule(rule_string): Takes a rule string and returns a Node object representing the AST.
 combine_rules(rules): Combines multiple rule strings into a single AST.
 evaluate_rule(data): Evaluates the combined rule's AST against user attributes provided in JSON format.```
-Installation
+
+
+
+## Installation
 To set up the project, follow these steps:
 
-Clone the repository:
+# Clone the repository:
 
-bash
-Copy code
+
 git clone https://github.com/yourusername/rule_engine_project.git
 cd rule_engine_project
-Install the required packages:
+# Install the required packages:
 
-bash
-Copy code
+
 pip install -r requirements.txt
-Activate the Pipenv shell:
+# Activate the Pipenv shell:
 
-bash
-Copy code
+
 pipenv shell
-Usage
+
+
+## Usage
 To run the application, execute the following command:
 
-bash
-Copy code
+
 python manage.py runserver
 Access the application at http://localhost:8000.
 
-Test Cases
+## Test Cases
 Create individual rules and verify their AST representation.
 Combine example rules and ensure the resulting AST reflects the combined logic.
 Implement sample JSON data and test the rule evaluation.
-Bonus Features
+# Bonus Features
 Error handling for invalid rule strings.
 Validation for attributes to ensure they are part of a defined catalog.
 Modifications of existing rules with functionality for adding/removing expressions.
 Support for user-defined functions within the rule language.
-Testing
+# Testing
 The API endpoints were tested using Postman, allowing for easy verification of the functionality and correctness of the API responses. Sample requests and responses can be provided upon request for further clarity.
 
