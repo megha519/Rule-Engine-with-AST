@@ -41,7 +41,7 @@ To set up the project, follow these steps:
 
 # Clone the repository:
 
-https://github.com/megha519/Rule-Engine-with-AST.git
+ git clone https://github.com/megha519/Rule-Engine-with-AST.git
 
 
 
@@ -51,7 +51,6 @@ cd rule_engine_project
 
 pip install -r requirements.txt
 # Activate the Pipenv shell:
-
 
 pipenv shell
 
